@@ -18,22 +18,12 @@ const OurService = (Props) => {
           dll.
         </h1>
         <ul className="List">
-          <li>
-            <img src={CheckIcon}></img>
-            {serviceList[0]}
-          </li>
-          <li>
-            <img src={CheckIcon}></img>
-            {serviceList[1]}
-          </li>
-          <li>
-            <img src={CheckIcon}></img>
-            {serviceList[2]}
-          </li>
-          <li>
-            <img src={CheckIcon}></img>
-            {serviceList[3]}
-          </li>
+          {serviceList.map((item, key) => (
+            <li key={key}>
+              <img src={CheckIcon}></img>
+              {item}
+            </li>
+          ))}
         </ul>
       </div>
     </div>
