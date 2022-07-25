@@ -7,6 +7,7 @@
 .Why-Us-Container {
   margin: 100px auto;
   width: 80%;
+  max-width: 2000px;
 }
 
 .Why-Us-Title-Desc {
