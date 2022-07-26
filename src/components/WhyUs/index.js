@@ -2,7 +2,6 @@ import "./style.css";
 
 const WhyUs = (Props) => {
   const { ArrayWhyUs } = Props;
-  console.log(ArrayWhyUs);
   return (
     <div className="Why-Us-Container">
       <div className="Why-Us-Title-Desc">

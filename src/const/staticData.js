@@ -2,6 +2,10 @@ import icoComplete from "../assets/image/icon_complete.png";
 import icoPriceTag from "../assets/image/icon_price.png";
 import ico24Hrs from "../assets/image/icon_24hrs.png";
 import icoProf from "../assets/image/icon_professional.png";
+import icoStar from "../assets/image/star.png";
+import profPic1 from "../assets/image/prof_pic1.png";
+import profPic2 from "../assets/image/prof_pic2.png";
+import profPic3 from "../assets/image/prof_pic3.png";
 
 // Static Data Our Service
 const serviceList = [
@@ -37,4 +41,29 @@ const ArrayWhyUs = [
   },
 ];
 
-export { serviceList, ArrayWhyUs };
+// Static Data Testimonial
+const reviewList = [
+  {
+    userPic: profPic1,
+    star: icoStar,
+    review:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+    Date: "John Dee 32, Bromo",
+  },
+  {
+    userPic: profPic2,
+    star: icoStar,
+    review:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+    Date: "John Dee 32, Bromo",
+  },
+  {
+    userPic: profPic3,
+    star: icoStar,
+    review:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+    Date: "John Dee 32, Bromo",
+  },
+];
+
+export { serviceList, ArrayWhyUs, reviewList };
