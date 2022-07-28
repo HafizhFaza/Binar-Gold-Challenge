@@ -5,7 +5,7 @@ import CheckIcon from "../../assets/image/CheckIco.png";
 const OurService = (Props) => {
   const { serviceList } = Props;
   return (
-    <div className="Service-Container">
+    <div id="ourservice" className="Service-Container">
       <img src={ServicesImage}></img>
       <div className="Service-Description">
         <h1 className="Desc-Title">

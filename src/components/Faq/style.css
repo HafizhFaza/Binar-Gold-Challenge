@@ -1,0 +1,38 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.FAQ {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.FAQ h1 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.FAQ h2 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+
+  color: #000000;
+}
+
+.Accordion {
+  width: 668px;
+}

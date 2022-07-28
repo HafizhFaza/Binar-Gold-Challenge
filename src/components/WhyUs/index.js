@@ -3,7 +3,7 @@ import "./style.css";
 const WhyUs = (Props) => {
   const { ArrayWhyUs } = Props;
   return (
-    <div className="Why-Us-Container">
+    <div id="whyus" className="Why-Us-Container">
       <div className="Why-Us-Title-Desc">
         <h1>Why Us?</h1>
         <h2>Mengapa harus pilih Binar Car Rental?</h2>

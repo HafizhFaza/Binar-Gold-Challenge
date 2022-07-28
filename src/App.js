@@ -10,7 +10,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/findmobil" element={<Cars />} />
-        <Route path="/detailmobil" element={<DetailCar />} />
+        <Route path="/detailmobil/:id" element={<DetailCar />} />
       </Routes>
     </React.Fragment>
   );

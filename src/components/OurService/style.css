@@ -68,3 +68,14 @@
 
   color: #000000;
 }
+
+@media screen and (max-device-width: 550px) {
+  .Service-Container {
+    display: flex;
+    flex-direction: column;
+  }
+  .Service-Description {
+    width: 100%;
+    align-items: center;
+  }
+}

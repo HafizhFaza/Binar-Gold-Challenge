@@ -44,7 +44,7 @@ const Testimonial = (Props) => {
   };
 
   return (
-    <div className="review-container">
+    <div id="testimonial" className="review-container">
       <div className="review-title">
         <h1>Testimonial</h1>
         <h2>Berbagai review positif dari para pelanggan kami</h2>

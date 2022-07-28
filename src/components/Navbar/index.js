@@ -1,4 +1,5 @@
 import "./style.css";
+import { AppBar } from "@mui/material";
 
 const Navbar = () => {
   return (
@@ -6,10 +7,10 @@ const Navbar = () => {
       <div className="nav-row">
         <div className="nav-logo"></div>
         <div className="nav-list">
-          <p>Our Services</p>
-          <p>Why Us</p>
-          <p>Testimonial</p>
-          <p>FAQ</p>
+          <a href="#ourservice">Our Services</a>
+          <a href="#whyus">Why Us</a>
+          <a href="testimonial">Testimonial</a>
+          <a href="FAQ">FAQ</a>
         </div>
       </div>
     </div>

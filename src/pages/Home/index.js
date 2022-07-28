@@ -4,9 +4,17 @@ import Banner from "../../components/Banner";
 import WhyUs from "../../components/WhyUs";
 import OurService from "../../components/OurService";
 import Testimonial from "../../components/Testimonial";
-import Testi from "../../components/Testimonial";
+import Cta from "../../components/Cta";
+import Sidebar from "../../components/Sidebar";
 
-import { serviceList, ArrayWhyUs, reviewList } from "../../const/staticData";
+import {
+  serviceList,
+  ArrayWhyUs,
+  reviewList,
+  listFAQ,
+  staticKontak,
+} from "../../const/staticData";
+import Faq from "../../components/Faq";
 
 const propsService = {
   serviceList,
@@ -20,6 +28,14 @@ const propsTestimonial = {
   reviewList,
 };
 
+const propsFAQ = {
+  listFAQ,
+};
+
+const propsFooter = {
+  staticKontak,
+};
+
 const Home = () => {
   return (
     <div>
@@ -28,7 +44,9 @@ const Home = () => {
       <OurService {...propsService} />
       <WhyUs {...propsWhyUs} />
       <Testimonial {...propsTestimonial} />
-      <Footer />
+      <Cta />
+      <Faq {...propsFAQ} />
+      <Footer {...propsFooter} />
     </div>
   );
 };

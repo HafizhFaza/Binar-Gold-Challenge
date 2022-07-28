@@ -66,4 +66,42 @@ const reviewList = [
   },
 ];
 
-export { serviceList, ArrayWhyUs, reviewList };
+//Static Data FAQ
+const listFAQ = [
+  {
+    question: "Apa saja syarat yang dibutuhkan?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+  },
+  {
+    question: "Berapa hari minimal sewa mobil lepas kunci?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+  },
+  {
+    question: "Berapa hari sebelumnya sabaiknya booking sewa mobil?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+  },
+  {
+    question: "Apakah Ada biaya antar-jemput?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+  },
+  {
+    question: "Bagaimana jika terjadi kecelakaan",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+  },
+];
+
+//Static Data Kontak
+const staticKontak = [
+  {
+    alamat: "Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000",
+    email: "binarcarrental@gmail.com",
+    kontak: "081-233-334-808",
+  },
+];
+
+export { serviceList, ArrayWhyUs, reviewList, listFAQ, staticKontak };
