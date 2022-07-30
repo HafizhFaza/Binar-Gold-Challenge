@@ -16,16 +16,44 @@ const Faq = (Props) => {
       </div>
       <div className="Accordion">
         {listFAQ.map((item, key) => (
-          <Accordion>
+          <Accordion
+            sx={{
+              border: 1,
+              borderColor: "#FFFFFF",
+              borderRadius: "4px",
+              mt: 1,
+              boxShadow: 0,
+            }}
+          >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <Typography className="Typography">{item.question}</Typography>
+              <Typography
+                sx={{
+                  fontFamily: "Arial",
+                  fonWeight: 700,
+                  fontSize: 14,
+                  fontStyle: "normal",
+                  lineHeight: "20px",
+                }}
+              >
+                {item.question}
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography className="Typography">{item.answer}</Typography>
+              <Typography
+              // sx={{
+              //   fontFamily: "Arial",
+              //   fonWeight: 700,
+              //   fontSize: 14,
+              //   fontStyle: "normal",
+              //   lineHeight: 20,
+              // }}
+              >
+                {item.answer}
+              </Typography>
             </AccordionDetails>
           </Accordion>
         ))}

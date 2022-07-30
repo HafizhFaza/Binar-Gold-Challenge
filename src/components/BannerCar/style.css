@@ -5,7 +5,7 @@
 
 .hero-section {
   display: flex;
-  width: 100%;
+  width: 1168px;
   justify-content: space-around;
   margin: auto;
   max-width: 2000px;

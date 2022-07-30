@@ -1,11 +1,16 @@
 import "./style.css";
 
-const SearchToolbar = () => {
+const SearchToolbar = (props) => {
+  const { handleChangeName, handleSearch } = props;
   return (
     <div className="tool-container">
       <div className="search-tool">
         <p>Nama Mobil</p>
-        <input type="search" placeholder="Ketik nama/tipe mobil" />
+        <input
+          type="search"
+          placeholder="Ketik nama/tipe mobil"
+          onChange={(e) => handleChangeName(e)}
+        />
       </div>
       <div className="capacity-tool">
         <p>Kategori</p>
@@ -33,10 +38,13 @@ const SearchToolbar = () => {
       <div className="status-tool">
         <p>Status</p>
         <select name="status" id="status" placeholder="Disewa">
-          <option value="disewa">Disewa</option>
-          <option value="tersedia">Tersedia</option>
+          <option value="true">True</option>
+          <option value="false">False</option>
         </select>
       </div>
+      <a className="cari-button" onClick={handleSearch}>
+        Cari
+      </a>
     </div>
   );
 };

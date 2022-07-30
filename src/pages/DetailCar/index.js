@@ -1,6 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import CarDetail from "../../components/CarDetail";
+import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
+import SearchToolbar from "../../components/SearchToolbar";
+import BannerCar from "../../components/BannerCar";
+import { include, exclude, reOrder } from "../../const/staticData";
 
 const DetailCar = () => {
   const [car, setCar] = useState({});
@@ -15,20 +21,16 @@ const DetailCar = () => {
       .catch((err) => console.log(err)); //jika gagal
   }, []);
 
+  const props = { car, include, exclude, reOrder };
+
   return (
-    <>
-      {car ? (
-        <div>
-          <img src={car?.image}></img>
-          <h1>{car?.name}</h1>
-          <h1>{car?.price}</h1>
-        </div>
-      ) : (
-        <div>
-          <h1>tidak ada mobel coey</h1>
-        </div>
-      )}
-    </>
+    <div>
+      <Navbar />
+      <BannerCar />
+      <SearchToolbar />
+      <CarDetail {...props} />
+      <Footer />
+    </div>
   );
 };
 

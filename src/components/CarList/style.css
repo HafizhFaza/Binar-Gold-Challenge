@@ -5,8 +5,8 @@
 }
 
 .car-container {
-  margin: 0 auto;
-  width: 60%;
+  margin: 100px auto;
+  width: 1168px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

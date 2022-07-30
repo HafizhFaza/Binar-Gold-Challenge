@@ -1,20 +1,10 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-const CarList = () => {
-  const [data, setData] = useState([]);
-  console.log("data ini adalah", data);
-  useEffect(() => {
-    axios
-      .get("https://bootcamp-rent-car.herokuapp.com/admin/car") //get API nya
-      .then((res) => setData(res.data)) //jika berhasil
-      .catch((err) => console.log(err)); //jika gagal
-  }, []);
+const CarList = ({ data }) => {
   return (
     <div className="car-container">
-      {!!data.length &&
+      {data.length > 0 &&
         data.map((item) => (
           <div className="car-card-container">
             <div clasName="car-card-content">
