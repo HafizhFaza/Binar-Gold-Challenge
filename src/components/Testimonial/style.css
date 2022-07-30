@@ -110,3 +110,11 @@
   flex-direction: column;
   margin-left: 46px;
 }
+
+.Arrow {
+  width: 100px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}

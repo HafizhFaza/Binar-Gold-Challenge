@@ -2,14 +2,20 @@ import "./style.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {
+  ArrowRightCircleFill,
+  ArrowLeftCircleFill,
+} from "react-bootstrap-icons";
+import { useState } from "react";
 
 const Testimonial = (Props) => {
   const { reviewList } = Props;
+  const [sliderRef, setSliderRef] = useState(null);
   const settings = {
     variableWidth: true,
     className: "slider variable-width",
     centerMode: true,
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
@@ -50,7 +56,7 @@ const Testimonial = (Props) => {
         <h2>Berbagai review positif dari para pelanggan kami</h2>
       </div>
       <div className="card-container">
-        <Slider {...settings}>
+        <Slider ref={setSliderRef} {...settings}>
           {reviewList.map((item, key) => (
             <div className="card-review" key={key} style={{ width: 619 }}>
               <div className="left-avatar">
@@ -64,6 +70,19 @@ const Testimonial = (Props) => {
             </div>
           ))}
         </Slider>
+        <div className="Arrow">
+          <ArrowLeftCircleFill
+            size={30}
+            className="btn-arrow mx-1"
+            onClick={sliderRef?.slickPrev}
+          />
+          <ArrowRightCircleFill
+            size={30}
+            color={"#5CB85F"}
+            className="btn-arrow mx-1"
+            onClick={sliderRef?.slickNext}
+          />
+        </div>
       </div>
     </div>
   );
