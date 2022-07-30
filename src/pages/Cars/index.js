@@ -9,13 +9,24 @@ import axios from "axios";
 const Cars = () => {
   const [data, setData] = useState([]);
   const [name, setName] = useState("");
+  const [fdata, setFData] = useState([]);
+  const [notFound, setNotFound] = useState(false);
   const handleChangeName = (e) => {
     setName(e.target.value);
+    if (e.target.value.length === 0) {
+      setFData([]);
+      setNotFound(false);
+    }
   };
+
   const handleSearch = () => {
     const newArray = data.filter((item) => item.name === name);
-    setData(newArray);
+    if (!newArray.length) {
+      setNotFound(true);
+    }
+    setFData(newArray);
   };
+
   useEffect(() => {
     axios
       .get("https://bootcamp-rent-car.herokuapp.com/admin/car") //get API nya
@@ -23,14 +34,16 @@ const Cars = () => {
       .catch((err) => console.log(err)); //jika gagal
   }, []);
 
-  console.log("data ini name", name);
+  console.log("data daata", data);
+  console.log("data fdata", fdata);
   const props = { data, name, handleChangeName, handleSearch };
   return (
     <div>
       <Navbar />
       <BannerCar />
       <SearchToolbar {...props} />
-      <CarList {...props} />
+      {!!notFound && <h1>Mobil Tidak Ditemukan</h1>}
+      <CarList data={!fdata.length ? data : fdata} />
       <Footer />
     </div>
   );

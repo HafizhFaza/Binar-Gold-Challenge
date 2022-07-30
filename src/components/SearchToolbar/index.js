@@ -20,6 +20,7 @@ const SearchToolbar = (props) => {
           placeholder="Masukan Kapasitas Mobil"
         >
           <option value="2-4 orang">2-4 Orang</option>
+          <option value="4-6 orang">4-6 Orang</option>
           <option value="6-8 orang">6-8 Orang</option>
         </select>
       </div>

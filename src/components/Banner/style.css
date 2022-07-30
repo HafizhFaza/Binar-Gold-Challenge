@@ -70,7 +70,7 @@
   line-height: 20px;
 }
 
-@media screen and (max-device-width: 375px) {
+@media (max-width: 376px) {
   .hero-section {
     width: 360px;
     display: flex;

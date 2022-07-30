@@ -70,7 +70,7 @@
   color: #000000;
 }
 
-@media screen and (max-device-width: 550px) {
+@media (max-width: 375px) {
   .Service-Container {
     display: flex;
     flex-direction: column;
@@ -78,5 +78,15 @@
   .Service-Description {
     width: 100%;
     align-items: center;
+  }
+  .Desc-Center {
+    width: 375px;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 18px;
+    color: #000000;
   }
 }

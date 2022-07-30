@@ -15,6 +15,7 @@ import {
   staticKontak,
 } from "../../const/staticData";
 import Faq from "../../components/Faq";
+import ResponsNav from "../../components/ResponsNav";
 
 const propsService = {
   serviceList,
@@ -40,6 +41,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
+      {/* <ResponsNav /> */}
       <Banner />
       <OurService {...propsService} />
       <WhyUs {...propsWhyUs} />
