@@ -1,19 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 
-const menuToggle = document.getElementById(".menu-toggle input");
-const nav = document.getElementById("nav ul");
+// const menuToggle = document.querySelector(".menu-toggle input");
+// const nav = document.querySelector("nav ul");
 
 // menuToggle.addEventListener("click", () => {
-//   nav.classList.toggle("slide");
+
 // });
 
 const ResponsNav = () => {
+  const [click, setClick] = useState(false);
+  const classAdd = () => {
+    setClick((current) => !current);
+    // nav.classList.toggle("slide");
+  };
   return (
     <React.Fragment>
       <nav>
         <div className="Logo"></div>
-        <ul>
+        <ul className={click ? "slide" : ""}>
           <li>
             <a href="">OurService</a>
           </li>
@@ -24,11 +29,11 @@ const ResponsNav = () => {
             <a href="">Testimonial</a>
           </li>
           <li>
-            <a href="">Faq</a>
+            <a href="">FAQ</a>
           </li>
         </ul>
 
-        <div className="menu-toggle">
+        <div className="menu-toggle" onClick={classAdd}>
           <input type="checkbox"></input>
           <span></span>
           <span></span>
