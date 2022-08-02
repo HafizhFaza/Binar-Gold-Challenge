@@ -40,15 +40,15 @@ const propsFooter = {
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <ResponsNav /> */}
       <Banner />
       <OurService {...propsService} />
       <WhyUs {...propsWhyUs} />
       <Testimonial {...propsTestimonial} />
-      <Cta />
+      {/* <Cta />
       <Faq {...propsFAQ} />
-      <Footer {...propsFooter} />
+      <Footer {...propsFooter} /> */}
     </div>
   );
 };

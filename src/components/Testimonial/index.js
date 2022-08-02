@@ -40,10 +40,11 @@ const Testimonial = (Props) => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 375,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
     ],
@@ -58,7 +59,7 @@ const Testimonial = (Props) => {
       <div className="card-container">
         <Slider ref={setSliderRef} {...settings}>
           {reviewList.map((item, key) => (
-            <div className="card-review" key={key} style={{ width: 619 }}>
+            <div className="card-review" key={key}>
               <div className="left-avatar">
                 <img className="avatar" src={item.userPic}></img>
               </div>

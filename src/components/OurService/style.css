@@ -6,7 +6,7 @@
 .Service-Container {
   display: flex;
   justify-content: space-evenly;
-  margin: 100px auto;
+  margin: 50px auto;
   max-width: 2000px;
   width: 1168px;
 }
@@ -70,15 +70,27 @@
   color: #000000;
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
   .Service-Container {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
+
+  .Service-Container img {
+    width: 252px;
+    margin: 0 auto;
+  }
+
   .Service-Description {
     width: 100%;
-    align-items: center;
+    padding: 0 16px;
   }
+
+  .Service-Description h1 {
+    width: 100%;
+  }
+
   .Desc-Center {
     width: 375px;
     font-family: "Arial";
@@ -88,5 +100,15 @@
     line-height: 20px;
     padding-bottom: 18px;
     color: #000000;
+  }
+
+  .List li {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .List li img {
+    margin: 0px;
   }
 }

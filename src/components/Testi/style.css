@@ -39,14 +39,13 @@
   color: gold;
 }
 
-@media screen and (max-width: 600px) {
-  .container.testimonials__container {
-    width: 90%;
+@media screen and (max-width: 375px) {
+  .card-container {
+    width: 375px;
   }
-  .client_review {
-    width: 90%;
-  }
-  .client__content {
-    padding-left: 20px;
+
+  .card-review {
+    display: flex;
+    flex-direction: column;
   }
 }

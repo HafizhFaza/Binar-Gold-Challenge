@@ -118,3 +118,45 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+@media screen and (max-device-width: 375px) {
+  .review-container {
+    width: 100%;
+    margin: 100px auto;
+  }
+
+  .review-title {
+    width: 100%;
+  }
+
+  .card-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-review {
+    width: 375px !important;
+    height: 392px;
+    display: flex !important;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .desc-content {
+    width: 375px;
+    margin-left: 0px;
+    padding: 0px 32px;
+  }
+
+  .desc-content h2 {
+    width: 375px;
+    padding-right: 48px;
+  }
+
+  .desc-content p {
+    width: 100%;
+  }
+}

@@ -8,7 +8,7 @@
   width: 1168px;
   justify-content: space-around;
   margin: auto;
-  max-width: 2000px;
+  /* max-width: 2000px; */
 }
 
 .hero-section img {
@@ -70,36 +70,47 @@
   line-height: 20px;
 }
 
-@media (max-width: 376px) {
+@media screen and (max-width: 375px) {
   .hero-section {
-    width: 360px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     margin: 30px auto;
   }
 
   .left-container {
-    width: 328px;
+    width: 90%;
+    gap: 16px;
   }
   .left-container h1 {
     margin: 0px;
-    width: 328px;
+    width: 100%;
     height: 216px;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    /* or 54px */
+
+    color: #000000;
   }
 
   .left-container h2 {
     margin: 0px;
-    width: 328px;
+    width: 100%;
   }
 
   .hero-left-button {
-    margin-top: 24px;
+    margin-top: 40px;
     margin-left: 0px;
   }
 
   .hero-section img {
     width: 100%;
     height: auto;
+    margin-top: 24px;
   }
 }
