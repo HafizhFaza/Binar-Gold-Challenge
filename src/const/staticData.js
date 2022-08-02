@@ -7,6 +7,9 @@ import profPic1 from "../assets/image/prof_pic1.png";
 import profPic2 from "../assets/image/prof_pic2.png";
 import profPic3 from "../assets/image/prof_pic3.png";
 
+//Static Data Navbar
+const navList = ["Our Service", "Why Us", "Testimony", "FAQ"];
+
 // Static Data Our Service
 const serviceList = [
   "Sewa Mobil Dengan Supir di Bali 12 Jam",
@@ -139,4 +142,5 @@ export {
   include,
   exclude,
   reOrder,
+  navList,
 };

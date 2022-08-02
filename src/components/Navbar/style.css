@@ -9,6 +9,7 @@
   justify-content: space-around;
   margin: 24px auto;
   align-items: center;
+  border: 1px solid black;
 }
 
 .nav-logo {
@@ -35,4 +36,13 @@
 }
 
 @media screen and (max-width: 375px) {
+  .nav-row {
+    margin: 0 auto;
+    flex-direction: space-between;
+    align-items: flex-start;
+  }
+
+  .nav-logo {
+    margin-left: 0px;
+  }
 }

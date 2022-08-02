@@ -6,6 +6,8 @@ import OurService from "../../components/OurService";
 import Testimonial from "../../components/Testimonial";
 import Cta from "../../components/Cta";
 import Sidebar from "../../components/Sidebar";
+import Faq from "../../components/Faq";
+import ResponsNav from "../../components/ResponsNav";
 
 import {
   serviceList,
@@ -13,9 +15,12 @@ import {
   reviewList,
   listFAQ,
   staticKontak,
+  navList,
 } from "../../const/staticData";
-import Faq from "../../components/Faq";
-import ResponsNav from "../../components/ResponsNav";
+
+const propsNav = {
+  navList,
+};
 
 const propsService = {
   serviceList,
@@ -41,14 +46,14 @@ const Home = () => {
   return (
     <div>
       {/* <Navbar /> */}
-      {/* <ResponsNav /> */}
+      <ResponsNav />
       <Banner />
       <OurService {...propsService} />
       <WhyUs {...propsWhyUs} />
       <Testimonial {...propsTestimonial} />
-      {/* <Cta />
+      <Cta />
       <Faq {...propsFAQ} />
-      <Footer {...propsFooter} /> */}
+      <Footer {...propsFooter} />
     </div>
   );
 };

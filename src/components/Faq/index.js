@@ -10,9 +10,11 @@ const Faq = (Props) => {
   const { listFAQ } = Props;
   return (
     <div className="FAQ">
-      <div>
+      <div className="Title">
         <h1>Frequently Asked Question</h1>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+        <div className="faq-desc">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+        </div>
       </div>
       <div className="Accordion">
         {listFAQ.map((item, key) => (

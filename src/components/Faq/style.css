@@ -36,3 +36,28 @@
 .Accordion {
   width: 668px;
 }
+
+@media screen and (max-device-width: 375px) {
+  .FAQ {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 16px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .Title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-desc h2 {
+    text-align: center;
+  }
+
+  .Accordion {
+    width: 100%;
+  }
+}
