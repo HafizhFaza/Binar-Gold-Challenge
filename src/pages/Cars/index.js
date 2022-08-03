@@ -95,7 +95,7 @@ const Cars = () => {
   console.log(category);
   return (
     <div>
-      <Navbar />
+      <ResponsNav />
       <BannerCar />
       <SearchToolbar {...props} />
       {!!notFound && <h1>Mobil Tidak Ditemukan</h1>}

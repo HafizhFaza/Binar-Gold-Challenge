@@ -45,7 +45,6 @@ const propsFooter = {
 const Home = () => {
   return (
     <div>
-      {/* <Navbar /> */}
       <ResponsNav />
       <Banner />
       <OurService {...propsService} />

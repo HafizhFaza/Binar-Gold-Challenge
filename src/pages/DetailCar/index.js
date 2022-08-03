@@ -25,7 +25,7 @@ const DetailCar = () => {
 
   return (
     <div>
-      <Navbar />
+      <ResponsNav />
       <BannerCar />
       <SearchToolbar />
       <CarDetail {...props} />
