@@ -20,16 +20,16 @@ const ResponsNav = () => {
         <div className="Logo"></div>
         <ul className={click ? "slide" : ""}>
           <li>
-            <a href="">OurService</a>
+            <a href="#ourservice">Our Service</a>
           </li>
           <li>
-            <a href="">WhyUs</a>
+            <a href="#whyus">Why Us</a>
           </li>
           <li>
-            <a href="">Testimonial</a>
+            <a href="#testimonial">Testimonial</a>
           </li>
           <li>
-            <a href="">FAQ</a>
+            <a href="#FAQ">FAQ</a>
           </li>
         </ul>
 

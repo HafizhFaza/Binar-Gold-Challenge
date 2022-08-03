@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+import ResponsNav from "../../components/ResponsNav";
 import Footer from "../../components/Footer";
 import CarList from "../../components/CarList";
 import BannerCar from "../../components/BannerCar";

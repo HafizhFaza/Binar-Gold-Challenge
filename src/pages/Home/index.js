@@ -1,11 +1,9 @@
-import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Banner from "../../components/Banner";
 import WhyUs from "../../components/WhyUs";
 import OurService from "../../components/OurService";
 import Testimonial from "../../components/Testimonial";
 import Cta from "../../components/Cta";
-import Sidebar from "../../components/Sidebar";
 import Faq from "../../components/Faq";
 import ResponsNav from "../../components/ResponsNav";
 

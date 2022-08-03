@@ -74,6 +74,7 @@ const Testimonial = (Props) => {
         <div className="Arrow">
           <ArrowLeftCircleFill
             size={30}
+            color={"#5CB85F"}
             className="btn-arrow mx-1"
             onClick={sliderRef?.slickPrev}
           />

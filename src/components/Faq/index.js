@@ -9,7 +9,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 const Faq = (Props) => {
   const { listFAQ } = Props;
   return (
-    <div className="FAQ">
+    <div className="FAQ" id="FAQ">
       <div className="Title">
         <h1>Frequently Asked Question</h1>
         <div className="faq-desc">

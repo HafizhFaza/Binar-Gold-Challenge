@@ -3,9 +3,9 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import CarDetail from "../../components/CarDetail";
 import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
 import SearchToolbar from "../../components/SearchToolbar";
 import BannerCar from "../../components/BannerCar";
+import ResponsNav from "../../components/ResponsNav";
 import { include, exclude, reOrder } from "../../const/staticData";
 
 const DetailCar = () => {
