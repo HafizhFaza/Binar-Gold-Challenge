@@ -67,8 +67,8 @@ const SearchToolbar = (props) => {
           <option value="" disabled selected style={{ fontColor: "#8A8A8A" }}>
             Masukan Status
           </option>
-          <option value="true">Disewa</option>
-          <option value="false">Tersedia</option>
+          <option value={true}>Disewa</option>
+          <option value={false}>Tersedia</option>
         </select>
       </div>
       <a className="cari-button" onClick={combineHandle}>

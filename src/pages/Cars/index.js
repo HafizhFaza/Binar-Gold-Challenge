@@ -64,6 +64,31 @@ const Cars = () => {
   };
 
   const combineHandle = () => {
+    // try {
+    //   let response = await axios.get(
+    //     "https://bootcamp-rent-car.herokuapp.com/admin/car"
+    //   );
+    //   let carList = await response.data;
+    //   if (name === "" && !category) {
+    //     setData(carList);
+    //   } else if (name !== "" && category !== "") {
+    //     carList = carList.filter(
+    //       (item) => item.name.toLowerCase() === name.toLocaleLowerCase()
+    //     );
+    //     carList = carList.filter((item) => item.category === category);
+    //     setData(carList);
+    //   } else if (name !== "") {
+    //     carList = carList.filter(
+    //       (item) => item.name.toLowerCase() === name.toLocaleLowerCase()
+    //     );
+    //     setData(carList);
+    //   } else if (category !== "") {
+    //     carList = carList.filter((item) => item.category === category);
+    //     setData(carList);
+    //   }
+    // } catch (error) {
+    //   console.log("error");
+    // }
     if (name) handleSearch();
     if (category) handleCategory();
     if (price) handlePrice();
