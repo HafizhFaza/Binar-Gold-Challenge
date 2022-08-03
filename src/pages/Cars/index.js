@@ -34,7 +34,9 @@ const Cars = () => {
   };
 
   const handleSearch = () => {
-    const newArray = data.filter((item) => item.name === name);
+    const newArray = data.filter(
+      (item) => item.name.toLowerCase() === name.toLowerCase()
+    );
     if (!newArray.length) {
       setNotFound(true);
     }
